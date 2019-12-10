@@ -1,0 +1,18 @@
+server.port=80
+
+spring.rabbitmq.host=127.0.0.1
+#amqp 通信协议端口
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=xiangjiao
+spring.rabbitmq.password=bunana
+#并发量配置
+##并发消费者的初始值
+#spring.rabbitmq.listener.concurrency=10
+##并发消费者的最大值
+#spring.rabbitmq.listener.max-concurrency=20
+##个消费者每次监听时可拉取处理的消息数量
+#spring.rabbitmq.listener.prefetch=5
+spring.rabbitmq.virtual-host=/xiangjiao
+#消息发送到转发器确认机制，是都确认回调
+spring.rabbitmq.publisher-confirms=true
+spring.rabbitmq.publisher-returns=true
